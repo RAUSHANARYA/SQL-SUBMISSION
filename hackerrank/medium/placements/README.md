@@ -61,7 +61,7 @@ The name output, when ordered by the salary offered to their friends, will be:
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T13:44:01.516Z  
+**Submitted:** 2026-10-28T14:02:33.252Z  
 
 ```sql
 /*
