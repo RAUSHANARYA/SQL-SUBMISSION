@@ -47,16 +47,16 @@ Output: true
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 41.5 MB  
-**Submitted:** 2026-11-02T13:40:42.021Z  
+**Runtime:** 1 ms (beats 92.20%)  
+**Memory:** 42.1 MB (beats 89.46%)  
+**Submitted:** 2026-11-02T13:45:17.563Z  
 
 ```java
 class Solution {
     public boolean isPowerOfFour(int n) 
     {
-        if(n==2) return false;
-        return n>0 && (n & (n-1))==0;
+        // if(n==2||n==8 ||n==12) return false;
+        return n>0 && (n & (n-1))==0 && n%3==1;
     }
 }
 ```
