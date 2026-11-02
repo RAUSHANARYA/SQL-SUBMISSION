@@ -42,24 +42,27 @@ Explanation: The binary representation of 11 is: 1011.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 1 ms (beats 12.96%)  
-**Memory:** 41.7 MB (beats 81.68%)  
-**Submitted:** 2026-11-02T14:06:31.366Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 41.4 MB (beats 98.54%)  
+**Submitted:** 2026-11-02T14:12:37.120Z  
 
 ```java
 class Solution {
     public boolean hasAlternatingBits(int n) {
 
-        String s = Integer.toBinaryString(n);
+        // String s = Integer.toBinaryString(n);
 
-        for(int i = 0; i < s.length() - 1; i++) {
+        // for(int i = 0; i < s.length() - 1; i++) {
 
-            if(s.charAt(i) == s.charAt(i + 1)) {
-                return false;
-            }
-        }
+        //     if(s.charAt(i) == s.charAt(i + 1)) {
+        //         return false;
+        //     }
+        // }
 
-        return true;
+        // return true;
+       int x = n ^ (n >> 1);
+
+        return (x & (x + 1)) == 0;
     }
 }
 ```
