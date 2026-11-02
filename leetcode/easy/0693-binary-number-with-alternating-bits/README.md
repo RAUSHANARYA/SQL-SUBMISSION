@@ -43,8 +43,8 @@ Explanation: The binary representation of 11 is: 1011.
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 41.4 MB (beats 98.54%)  
-**Submitted:** 2026-11-02T14:12:37.120Z  
+**Memory:** 41.9 MB (beats 68.12%)  
+**Submitted:** 2026-11-02T14:12:57.329Z  
 
 ```java
 class Solution {
@@ -60,9 +60,8 @@ class Solution {
         // }
 
         // return true;
-       int x = n ^ (n >> 1);
-
-        return (x & (x + 1)) == 0;
+        int x = n^(n>>1) ; // 5^ (5/2)==7 
+        return (x&(x+1))==0;
     }
 }
 ```
