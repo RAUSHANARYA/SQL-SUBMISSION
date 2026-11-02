@@ -11,8 +11,7 @@ class Solution {
         // }
 
         // return true;
-       int x = n ^ (n >> 1);
-
-        return (x & (x + 1)) == 0;
+        int x = n^(n>>1) ; // 5^ (5/2)==7 
+        return (x&(x+1))==0;
     }
 }
