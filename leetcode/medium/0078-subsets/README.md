@@ -38,8 +38,8 @@ Output: [[],[0]]
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 90.72%)  
-**Memory:** 43.6 MB (beats 87.51%)  
-**Submitted:** 2026-11-03T13:06:21.453Z  
+**Memory:** 43.6 MB (beats 92.41%)  
+**Submitted:** 2026-11-03T13:14:34.264Z  
 
 ```java
 class Solution {
@@ -61,8 +61,7 @@ class Solution {
             return;
         }
 
-    // Not Take
-    backtrack(arr, i + 1, path, ans);
+    
 
     // Take
     path.add(arr[i]);
@@ -70,6 +69,8 @@ class Solution {
 
     // Backtrack
     path.remove(path.size() - 1);
+    // Not Take
+    backtrack(arr, i + 1, path, ans);
     }
 
 }
