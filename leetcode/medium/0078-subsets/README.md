@@ -39,7 +39,7 @@ Output: [[],[0]]
 **Language:** Java  
 **Runtime:** 1 ms (beats 90.72%)  
 **Memory:** 43.6 MB (beats 87.51%)  
-**Submitted:** 2026-11-03T13:02:55.048Z  
+**Submitted:** 2026-11-03T13:06:21.453Z  
 
 ```java
 class Solution {
@@ -60,10 +60,16 @@ class Solution {
             ans.add(new ArrayList<>(path));
             return;
         }
-        path.add(arr[i]);
-        backtrack(arr,i+1,path,ans);
-        path.remove(path.size()-1);
-        backtrack(arr, i + 1, path, ans);
+
+    // Not Take
+    backtrack(arr, i + 1, path, ans);
+
+    // Take
+    path.add(arr[i]);
+    backtrack(arr, i + 1, path, ans);
+
+    // Backtrack
+    path.remove(path.size() - 1);
     }
 
 }
