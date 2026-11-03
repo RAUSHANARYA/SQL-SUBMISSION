@@ -17,8 +17,7 @@ class Solution {
             return;
         }
 
-    // Not Take
-    backtrack(arr, i + 1, path, ans);
+    
 
     // Take
     path.add(arr[i]);
@@ -26,6 +25,8 @@ class Solution {
 
     // Backtrack
     path.remove(path.size() - 1);
+    // Not Take
+    backtrack(arr, i + 1, path, ans);
     }
 
 }
