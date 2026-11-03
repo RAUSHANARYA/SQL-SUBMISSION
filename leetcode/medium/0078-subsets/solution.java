@@ -16,10 +16,16 @@ class Solution {
             ans.add(new ArrayList<>(path));
             return;
         }
-        path.add(arr[i]);
-        backtrack(arr,i+1,path,ans);
-        path.remove(path.size()-1);
-        backtrack(arr, i + 1, path, ans);
+
+    // Not Take
+    backtrack(arr, i + 1, path, ans);
+
+    // Take
+    path.add(arr[i]);
+    backtrack(arr, i + 1, path, ans);
+
+    // Backtrack
+    path.remove(path.size() - 1);
     }
 
 }
