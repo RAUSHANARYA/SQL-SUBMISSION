@@ -21,7 +21,7 @@ where *LAT\_N* is the northern latitude and *LONG\_W* is the western longitude.
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T17:20:07.240Z  
+**Submitted:** 2026-11-10T20:22:03.990Z  
 
 ```sql
 SELECT
