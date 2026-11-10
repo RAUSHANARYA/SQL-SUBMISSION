@@ -33,30 +33,17 @@ where *LAT\_N* is the northern latitude and *LONG\_W* is the western longitude.
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T17:54:45.645Z  
+**Submitted:** 2026-11-10T20:30:37.444Z  
 
 ```sql
 /*
 Enter your query here.
+
+c-a + d-b
 */
-
--- SELECT min(lat_n) as a 
--- from STATION 
--- union
--- SELECT min(LONG_W) as b
--- from STATION 
--- union
--- SELECT max(lat_n) as c
--- from STATION 
--- union 
--- SELECT max(LONG_W) as d
--- from STATION 
-
-SELECT round(
-    abs(max(lat_n)-min(lat_n)) +
-     abs(max(LONG_W)-min(LONG_W))
-,4)
-from station;
+select 
+round(abs(max(LAT_N)-min(LAT_N )) + abs(max(LONG_W )-min(LONG_W ))
+,4) from STATION ;
 
 ```
 
